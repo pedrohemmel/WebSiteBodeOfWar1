@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Telletubies</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+</head>
+<body style="background-color: #5e4d7e">
+
+    <main class="container" id="containerPrincipal" style="background-color: white">
+
+        
+        <img src="https://user-images.githubusercontent.com/89108219/168502761-1b18a409-87c0-4cbe-8107-7ff528f41dec.png" class="imagens" alt="Menu principal">
+        
+        
+
+        <br>
+    
+        <h2>Resumo</h2>
+
+        <p>Este é um projeto de um Sistema Autônomo que joga uma partida inteira de um jogo Online contra até 3 adversários.</p>
+        <br>
+        <p>Neste projeto, o jogo de cartas Bode Of War foi recriado em C# usando .NET Framewok e Windows Forms como parte do terceiro semestre do curso de Ciências da Computação do SENAC de São Paulo.</p>
+        <br>
+        <p>Além do servidor que o jogo se conecta e as funções que usamos da DLL, o projeto foi feito 100% à mão.</p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/168503100-54c0de2e-46bf-44d2-be3f-49890181fff2.png" class="imagens" alt="Página de listar partidas">
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/168503130-5aaa1a38-68bf-43f2-b7e0-ac2af3415a5d.png" class="imagens" alt="Página de entrar em partida">
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/168503157-8547b517-6b3e-4312-9de0-e717de318649.png" class="imagens" alt="Página de hobby da partida">
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/168503179-3dafa30c-2033-4ba1-a82a-6d5e4181285d.png" class="imagens" alt="Página de hobby da partida">
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170893814-f1188d71-31ef-4fb2-b992-f6d65a1a2193.png" class="imagens" alt="Painel do jogador">
+
+        <br>
+
+        <span>Agradecimento especial ao @Yuri-barbosa21, que foi quem fez todas as imagens do projeto</span>
+
+        <br>
+
+        <h2>Visão do Projeto</h2>
+
+        <br>
+
+        <p>O projeto foi pensado para funcionar de forma extremamente dinâmica de forma que houvesse uma tela para cada menu necessário. Há o menu que lista as partidas e o que te pede credenciais para ingressar em alguma, por exemplo.</p>
+        <br>
+        <p>O rascunho inicial da dinâmica dos menus pode ser acessado <a href="https://xd.adobe.com/view/b89a2cd3-3c15-49ca-8827-7cf1908e99dc-edc9/">Aqui</a></p>
+        <br>
+        <p>Também é possível acessar os modos Manual e Aleatório do jogo que foram usados como protótipos e foi considerado importante manter no programa para analisar quão longe o projeto foi desenvolvido.</p>
+
+        <br>
+
+        <h2>Detalhes Técnicos</h2>
+
+        <br>
+
+        <p>Foram usados conceitos de Orientação a Objetos na criação de classes como Cartas, Jogador e Partida (por exemplo) e seus respectivos atributos e métodos.</p>
+        <br>
+        <p>Apesar disso, o código não está 100% em conformidade com OOP pois há uma grande dificuldade em uma classe acessar controles da outra. Por exemplo: uma função em Partida não consegue mudar o texto de uma label de um form.</p>
+        <br>
+        <p>Também foi feito um trabalho intensivo na UX e UI do projeto. Foi usado, inclusive, um sistema de threading (BackGround Worker) para separar a GUI do processamento das funções para evitar congelamentos de tela.</p>
+        <br>
+        <p>Todas as funções estão comentadas dentro do código e podem ser acessadas neste repositório, caso tenha curiosidade.</p>
+        <br>
+        <p>A estratégia adotada para o sistema autônomo segue a seguinte lógica:</p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170899125-b2e8defd-1a8f-489b-bab2-69dc92557c42.png" class="imagens" alt="Estratégia">
+
+        <br>
+
+        <p>A arquitetura das classes está estruturada como:</p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170899119-f6144bed-b1cd-4a64-833a-a75c93c17044.png" class="imagens" alt="Estrutura">
+
+        <br>
+
+        <p>Infelizmente, após o desligamento do serviço que o professor Thiago Ribeiro Claro criou e manteve para este projeto, não será mais possível criar partidas online contra outras estratégias. Porém, será adicionado o banco de dados no repositório que permitirá que o programa seja executado posteriormente.</p>
+
+        <br>
+
+        <h2>Prints Técnicos</h2>
+
+        <br>
+
+        <p>Função Main: </p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170898725-a5bb4be9-90fc-4baa-9b64-875d3a451469.png" class="imagens" alt="Imagen função main">
+
+        <br>
+
+        <p>Funções da classe Jogador</p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170899435-37f72eaf-1b14-4d4b-a581-327bce8b4e8a.png" class="imagens" alt="Imagen funções classe jogador">
+
+        <br>
+
+        <p>Funções da classe Partida</p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170899447-8bc6dd95-1f27-425d-85ef-dedd4b3845a9.png" class="imagens" alt="Imagen funções classe partida">
+
+        <br>
+
+        <p>Funções da classe User</p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170899457-1a24b161-db87-457a-be26-f8fc2abc8b0f.png" class="imagens" alt="Imagen funções classe user">
+
+        <br>
+
+        <p>Funções do Form Mão Estratégia</p>
+
+        <br>
+
+        <img src="https://user-images.githubusercontent.com/89108219/170899529-07cc23d3-4548-4fce-babb-b02756ed72b5.png" class="imagens" alt="Imagen funções form mão estratégias">
+
+        <br>
+
+        <h2>Conclusão</h2>
+
+        <p>Este foi um projeto que foi desenvolvido em 3 meses e poucos foram os dias em que não houve mudança alguma no código.</p>
+        <br>
+        <p>Não deixe de checar os <a href="https://github.com/ViniPetra/BodeOfWar/pulse">Insights do repositório</a></p>
+        <br>
+        <p>A oportunidade de trabalhar tão intensivamente com C# foi fenomenal e foi uma alavanca para muitos conhecimentos em programação que não se limitam à linguagem: Clean code, padrões em funções, OOP, Event oriented programming, Async code, Git, Estruturação de projetos e muitos outros que são incontáveis.</p>
+        <br>
+        <p>Apesar de muitas frustrações no caminho, foi muito divertido passar por esta experiência e só resta a gratidão de ter feito algo que posso dizer que sinto orgulho.</p>
+    </main>
+    
+</body>
+</html>
